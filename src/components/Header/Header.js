@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+
 import { Container } from '../Container';
 import { Profile } from '../Profile';
 import { Button } from '../Button';
@@ -42,8 +45,8 @@ const Header = () => (
     <Container>
       <img src={`${process.env.PUBLIC_URL}/img/profile.png`} alt="James Lee" />
       <Profile />
-      <Button as="a" href="#">
-        Contact me
+      <Button as="a" href="#" bold>
+        <FontAwesomeIcon icon={faPaperPlane} /> Contact me
       </Button>
     </Container>
   </StyledHeader>

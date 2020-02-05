@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { SocialIcon } from '../SocialIcon';
+
 const StyledProfile = styled.div`
   h1 {
     font-size: 38px;
@@ -19,6 +21,9 @@ const StyledProfile = styled.div`
 
     li {
       display: inline;
+      :not(:last-child) {
+        margin-right: 8px;
+      }
     }
   }
 
@@ -31,7 +36,23 @@ const Profile = () => (
   <StyledProfile>
     <h1>James Lee</h1>
     <h2>Web App Developer</h2>
-    <ul>{/* TODO: social icon list */}</ul>
+    <ul>
+      <li>
+        <SocialIcon socialNetwork="twitter" />
+      </li>
+      <li>
+        <SocialIcon socialNetwork="googleplus" />
+      </li>
+      <li>
+        <SocialIcon socialNetwork="linkedin" />
+      </li>
+      <li>
+        <SocialIcon socialNetwork="github" />
+      </li>
+      <li>
+        <SocialIcon socialNetwork="yahoo" />
+      </li>
+    </ul>
   </StyledProfile>
 );
 

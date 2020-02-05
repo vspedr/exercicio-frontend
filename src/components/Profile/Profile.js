@@ -1,21 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Profile = ({ className }) => (
-  <div className={className}>
-    <h1>James Lee</h1>
-    <h2>Web App Developer</h2>
-    <ul>
-      <li>🤔</li>
-      <li>🤔</li>
-      <li>🤔</li>
-      <li>🤔</li>
-      <li>🤔</li>
-    </ul>
-  </div>
-);
-
-export default styled(Profile)`
+const StyledProfile = styled.div`
   h1 {
     font-size: 38px;
     font-weight: bold;
@@ -40,3 +26,13 @@ export default styled(Profile)`
     text-align: center;
   }
 `;
+
+const Profile = () => (
+  <StyledProfile>
+    <h1>James Lee</h1>
+    <h2>Web App Developer</h2>
+    <ul>{/* TODO: social icon list */}</ul>
+  </StyledProfile>
+);
+
+export default Profile;

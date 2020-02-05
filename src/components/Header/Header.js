@@ -1,22 +1,10 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Container } from '../Container';
 import { Profile } from '../Profile';
 import { Button } from '../Button';
-import styled from 'styled-components';
 
-const Header = ({ className }) => (
-  <header className={className}>
-    <Container>
-      <img src={`${process.env.PUBLIC_URL}/img/profile.png`} alt="James Lee" />
-      <Profile />
-      <Button as="a" href="#">
-        Contact me
-      </Button>
-    </Container>
-  </header>
-);
-
-export default styled(Header)`
+const StyledHeader = styled.header`
   padding: 30px 0;
   background: #f5f5f5;
   border-top: 10px solid #778492;
@@ -48,3 +36,17 @@ export default styled(Header)`
     }
   }
 `;
+
+const Header = () => (
+  <StyledHeader>
+    <Container>
+      <img src={`${process.env.PUBLIC_URL}/img/profile.png`} alt="James Lee" />
+      <Profile />
+      <Button as="a" href="#">
+        Contact me
+      </Button>
+    </Container>
+  </StyledHeader>
+);
+
+export default Header;

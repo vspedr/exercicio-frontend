@@ -7,7 +7,7 @@ const Main = styled(Container)`
   margin: 0px auto;
   padding: 0px;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 992px) {
     grid-template-columns: 2fr 1fr;
   }
 `;

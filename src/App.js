@@ -1,20 +1,13 @@
-import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import React from 'react';
 import { Header } from './components/Header';
 import { Main } from './components/Main';
 import { Column } from './components/Column';
 import { Footer } from './components/Footer';
 import { Section } from './components/Section';
+import { ProjectsList } from './components/ProjectsList';
 import { GlobalStyle } from './GlobalStyle';
 
-import { fetchProjects } from './redux/actions';
-
 const App = () => {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchProjects());
-  }, [dispatch]);
-
   return (
     <>
       <GlobalStyle />
@@ -36,6 +29,7 @@ const App = () => {
               Lorem Ipsum.
             </p>
           </Section>
+          <ProjectsList />
         </Column>
         <Column>
           <Section>

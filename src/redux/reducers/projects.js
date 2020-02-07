@@ -5,7 +5,7 @@ import {
 } from '../actionTypes';
 
 const initialState = {
-  projects: [],
+  list: [],
   loading: false,
   error: null
 };
@@ -18,7 +18,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         loading: false,
-        projects: action.payload
+        list: action.payload
       };
     case PROJECTS_FETCH_ERROR:
       return {

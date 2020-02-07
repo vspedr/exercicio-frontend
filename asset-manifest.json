@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/exercicio-frontend/static/js/main.0de6c0e0.chunk.js",
-    "main.js.map": "/exercicio-frontend/static/js/main.0de6c0e0.chunk.js.map",
+    "main.js": "/exercicio-frontend/static/js/main.0c000a38.chunk.js",
+    "main.js.map": "/exercicio-frontend/static/js/main.0c000a38.chunk.js.map",
     "runtime-main.js": "/exercicio-frontend/static/js/runtime-main.0f05befd.js",
     "runtime-main.js.map": "/exercicio-frontend/static/js/runtime-main.0f05befd.js.map",
     "static/js/2.09897183.chunk.js": "/exercicio-frontend/static/js/2.09897183.chunk.js",
     "static/js/2.09897183.chunk.js.map": "/exercicio-frontend/static/js/2.09897183.chunk.js.map",
     "index.html": "/exercicio-frontend/index.html",
-    "precache-manifest.124e21ed7b7858bbcafd131260070dfb.js": "/exercicio-frontend/precache-manifest.124e21ed7b7858bbcafd131260070dfb.js",
+    "precache-manifest.8578495ae07fcc8e175a368f0699718e.js": "/exercicio-frontend/precache-manifest.8578495ae07fcc8e175a368f0699718e.js",
     "service-worker.js": "/exercicio-frontend/service-worker.js",
     "static/js/2.09897183.chunk.js.LICENSE.txt": "/exercicio-frontend/static/js/2.09897183.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0f05befd.js",
     "static/js/2.09897183.chunk.js",
-    "static/js/main.0de6c0e0.chunk.js"
+    "static/js/main.0c000a38.chunk.js"
   ]
 }

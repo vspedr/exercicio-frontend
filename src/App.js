@@ -7,6 +7,7 @@ import { Footer } from './components/Footer';
 import { Section } from './components/Section';
 import { ProjectsList } from './components/ProjectsList';
 import { ContactInfo } from './components/ContactInfo';
+import { SkillsInfo } from './components/SkillsInfo';
 import { GlobalStyle } from './GlobalStyle';
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
         </Column>
         <Column>
           <ContactInfo />
+          <SkillsInfo />
         </Column>
       </Main>
       <Footer />

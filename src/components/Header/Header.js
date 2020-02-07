@@ -8,7 +8,7 @@ import { Profile } from '../Profile';
 import { Button } from '../Button';
 
 const StyledHeader = styled.header`
-  padding: 30px 0;
+  padding: 32px 0;
   background: #f5f5f5;
   border-top: 10px solid #778492;
 
@@ -25,7 +25,7 @@ const StyledHeader = styled.header`
 
   @media (min-width: 768px) {
     img {
-      margin-right: 30px;
+      margin-right: 32px;
     }
 
     .container {

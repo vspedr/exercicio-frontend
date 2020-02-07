@@ -4,8 +4,9 @@ import { Container } from '../Container';
 const Main = styled(Container)`
   display: grid;
   grid-template-columns: 1fr;
-  margin: 0px auto;
-  padding: 0px;
+  grid-gap: 32px;
+  margin: auto;
+  padding: 60px 16px;
 
   @media (min-width: 992px) {
     grid-template-columns: 2fr 1fr;

@@ -13,6 +13,7 @@ const Section = styled.section.attrs({ className: 'section' })`
     margin-bottom: 32px;
     color: #545e69;
     font-size: 24px;
+    font-weight: bold;
   }
 `;
 

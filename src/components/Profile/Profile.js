@@ -7,12 +7,14 @@ const StyledProfile = styled.div`
   h1 {
     font-size: 38px;
     font-weight: bold;
+    margin: 20px 0px;
   }
 
   h2 {
     color: #778492;
     font-family: Arial, sans-serif;
     font-size: 24px;
+    font-weight: normal;
   }
 
   ul {

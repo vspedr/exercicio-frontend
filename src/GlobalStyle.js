@@ -11,4 +11,9 @@ export const GlobalStyle = createGlobalStyle`
     background: #DAE3E7;
     color: #434343;
   }
+
+  p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
 `;

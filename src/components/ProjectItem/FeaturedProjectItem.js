@@ -14,12 +14,16 @@ const StyledFeaturedProjectItem = styled.div`
     color: #778492;
   }
 
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
   h4 {
     font-weight: normal;
   }
 
   p {
-    font-family: Arial, sans-serif;
     display: inline-block;
   }
 

@@ -23,6 +23,7 @@ const StyledProjectItem = styled.div`
       h3 {
         margin: 0px;
         color: #778492;
+        font-size: 18px;
       }
 
       p {

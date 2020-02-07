@@ -1,4 +1,5 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 
 import { Header } from './components/Header';
 import { Main } from './components/Main';
@@ -9,10 +10,11 @@ import { ProjectsList } from './components/ProjectsList';
 import { ContactInfo } from './components/ContactInfo';
 import { SkillsInfo } from './components/SkillsInfo';
 import { GlobalStyle } from './GlobalStyle';
+import store from './redux/store';
 
 const App = () => {
   return (
-    <>
+    <Provider store={store}>
       <GlobalStyle />
       <Header />
       <Main as="main">
@@ -40,7 +42,7 @@ const App = () => {
         </Column>
       </Main>
       <Footer />
-    </>
+    </Provider>
   );
 };
 

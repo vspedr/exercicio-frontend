@@ -30,7 +30,7 @@ const ProjectsList = () => {
       <FeaturedProjectItem project={mainProject} />
       <hr />
       {otherProjects.map(project => (
-        <ProjectItem project={project} />
+        <ProjectItem key={project.id} project={project} />
       ))}
     </Section>
   );

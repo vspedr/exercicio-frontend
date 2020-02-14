@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import { SocialIcon } from '../SocialIcon';
@@ -34,28 +35,28 @@ const StyledProfile = styled.div`
   }
 `;
 
-const Profile = () => (
+const Profile = ({ name, title, socialNetworks }) => (
   <StyledProfile>
-    <h1>James Lee</h1>
-    <h2>Web App Developer</h2>
+    <h1>{name}</h1>
+    <h2>{title}</h2>
     <ul>
-      <li>
-        <SocialIcon socialNetwork="twitter" />
-      </li>
-      <li>
-        <SocialIcon socialNetwork="googleplus" />
-      </li>
-      <li>
-        <SocialIcon socialNetwork="linkedin" />
-      </li>
-      <li>
-        <SocialIcon socialNetwork="github" />
-      </li>
-      <li>
-        <SocialIcon socialNetwork="yahoo" />
-      </li>
+      {socialNetworks.map(n => (
+        <SocialIcon socialNetwork={n} href="#" />
+      ))}
     </ul>
   </StyledProfile>
 );
+
+Profile.propTypes = {
+  name: PropTypes.string,
+  title: PropTypes.string,
+  socialNetworks: PropTypes.arrayOf(PropTypes.string)
+};
+
+Profile.defaultProps = {
+  name: '',
+  title: '',
+  socialNetworks: []
+};
 
 export default Profile;
